@@ -33,7 +33,7 @@ def extract_job(html):
         company = company.strip()
 
     location = html.find('div', {'class': 'recJobLoc'})['data-rc-loc']
-    job_id = html['data-jk']
+    job_id = html['data-jk']#[] 안에 있는건 attributes 적근시 사용 
 
     return {
         'title': title,
